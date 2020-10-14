@@ -27,4 +27,4 @@ const server = http.createServer((req, res) => {
 });
 
 // listens to \/ port and logs if the site is running
-server.listen(3000, () => console.log("LocalSite Running"));
+server.listen(process.env.PORT || 3000, () => console.log("LocalSite Running"));
